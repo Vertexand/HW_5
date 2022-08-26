@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study GB\\Hw_5\\Hw_5\\34_Task_hw5\\34_Task_hw5.csproj",
+      "projectUniqueName": "D:\\Study GB\\Hw_5\\34_Task_hw5\\34_Task_hw5.csproj",
       "projectName": "34_Task_hw5",
-      "projectPath": "D:\\Study GB\\Hw_5\\Hw_5\\34_Task_hw5\\34_Task_hw5.csproj",
+      "projectPath": "D:\\Study GB\\Hw_5\\34_Task_hw5\\34_Task_hw5.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\Study GB\\Hw_5\\Hw_5\\34_Task_hw5\\obj\\",
+      "outputPath": "D:\\Study GB\\Hw_5\\34_Task_hw5\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
