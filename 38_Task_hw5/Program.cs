@@ -34,50 +34,5 @@ Console.WriteLine($"разница между макс. и мин. элемен�
 
 
 
-// double[] FillArrayWithRandomNumbers(int size, int leftRange, int rightRange)//мечта
-// {
-//     double[] array = new double[size];
-//     Random random = new Random();
-//     for (int i = 0; i < size; i++)
-//     {
-//         array[i] = random.Next(leftRange, rightRange + 1);
-//     }
-//     return array;
-// }
-// double[] arr = FillArrayWithRandomNumbers(5, -10, 12);
-// Console.WriteLine(string.Join(", ", arr));
-
-// double Max = arr[0];
-// for (int i = 1; i < arr.Length; i++)
-// {
-//     if (arr[i] > Max)// это цикл
-//     {
-//         Max = arr[i];
-//     else
-//         {
-//             double Min = arr[i]; //как  сделать чтобы сработал только раз
-//         }
-//     }
-//     else if (arr[i] < Min;)    // и это цикл
-//     {
-//     Min = arr[i];   // скобки ?
-// }
-// Console.WriteLine($"разница между макс. и мин. элементами массива = {Max - Min}");
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
