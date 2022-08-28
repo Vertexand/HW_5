@@ -2,7 +2,6 @@
 // значения которых лежат в отрезке [10,99]. Пример для массива из 5, а не 123 элементов. В своём решении сделайте 
 // для 123 [5, 18, 123, 6, 2] -> 1  [1, 2, 3, 6, 2] -> 0  [10, 11, 12, 13, 14] -> 5 
 
-
 int[] FillArrayWithRandomNumbers(int size, int leftRange, int rightRange)
 {
     int[] array = new int[size];
@@ -16,35 +15,31 @@ int[] FillArrayWithRandomNumbers(int size, int leftRange, int rightRange)
 int[] arr = FillArrayWithRandomNumbers(123, 1, 124);
 Console.WriteLine(string.Join(", ", arr));// вывод исходного массива
 
-// void ColOfArrayElements(123, 10, 100); //(int[] array)
-int[] array =  FillArrayWithRandomNumbers(123, 10, 100); //(int[] array)
-int col = 0;
+void ColOfArrayElements(int[] array)// не (123, 10, 100); метод
 {
+    int col = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        // array[i] =  arr(10, 100);
-        // if (10 < array[i] < 100)
+        if (10 < array[i] && array[i] < 100)// if (array[i] =  arr(10, 100)) не подошло
             col += 1;
     }
+    Console.WriteLine($"Всего, элементов массива из отрезка [10,99] = {col}");
 }
-Console.WriteLine($"Всего элементов массива из отрезка [10,99] = {col}");
+ColOfArrayElements(arr);
 
-
-
-// int[] array = FillArrayWithRandomNumbers(123, 10, 100);// вар
-// // int[] array = arr;
-// int col = 0;
-// for (int i = 0; i < arr.Length; i++)
+// int col = 0; //запасной вар. не метод
 // {
-//     // 10 < array[i] <100;
-//     // // int[] array = FillArrayWithRandomNumbers(123, 10, 100);
+//     for (int i = 0; i < arr.Length; i++)
+//     {
+//         if (10 < arr[i] && arr[i] < 100)// if (array[i] =  arr(10, 100))
 //             col += 1;
+//     }
 // }
-// Console.WriteLine(string.Join(", ", array));
 // Console.WriteLine($"Всего элементов массива из отрезка [10,99] = {col}");
 
 
-// Задача 32: Напишите программу замена элементов массива: положительные элементы замените на
+
+// CEMINAR 5 Задача 32: Напишите программу замена элементов массива: положительные элементы замените на
 // соответствующие отрицательные, и наоборот. [-4, -8, 8, 2] -> [4, 8, -8, -2]  cem 5 cek 1.17 
 
 // int[] arr = FillArrayWithRandomNumbers(10, -10, 10);
@@ -71,7 +66,7 @@ Console.WriteLine($"Всего элементов массива из отрез
 //     }
 // // } 
 
-// Задача 33: Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве. 
+// CEMINAR 5 Задача 33: Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве. 
 // 4; массив [6, 7, 19, 345, 3] -> нет  3; массив [6, 7, 19, 345, 3] -> да  ТОЛЬКО ОДИН РАЗ 
 
 // int[] FillArrayWithRandomNumbers(int size, int leftRange, int rightRange) //длина массива, границы для рандомного значения
@@ -85,32 +80,31 @@ Console.WriteLine($"Всего элементов массива из отрез
 //     }
 //     return array;
 // }
-// int[] arr = FillArrayWithRandomNumbers(10, -10, 10);
-// Console.WriteLine(string.Join(", ", arr));// вывод исходного массива
-// Console.WriteLine("какое число должно встретиться?");
-// int number = Convert.ToInt32(Console.ReadLine());
-// bool result = IsNumberInArray(arr, number);
-// if(result==true)
-// {
-//     Console.WriteLine("Да");
-// }
-// else
-// {
-//     Console.WriteLine("Нет");
-// }
+
 
 // bool IsNumberInArray(int[] array, int findNumber)  //так назвали method
 // // bool a = true;
 // // a = false;
 // {
 //     bool flag = false; // т.е элем нет, иначе true
-//     for(int i=0; i<array.Length; i++)
+//     for (int i = 0; i < array.Length; i++)
 //     {
 //         if (array[i] == findNumber)
 //         {
-//             flag=true; //искомый эл найден
+//             flag = true; //искомый эл найден
 //             break;
 //         }
 //     }
 //     return flag;
 // }
+// int[] arr = FillArrayWithRandomNumbers(10, -10, 10);
+// Console.WriteLine(string.Join(", ", arr));// вывод исходного массива
+
+// Console.WriteLine("какое число должно встретиться?");
+// int number = Convert.ToInt32(Console.ReadLine());
+// bool result = IsNumberInArray(arr, number);//вызовем наш метод, передаем сюда массив и вводимое число 
+
+// if (result == true){//делаем проверку
+//     Console.WriteLine("Да");}
+// else{
+//     Console.WriteLine("Нет");}
